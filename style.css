@@ -1,0 +1,273 @@
+body{
+    margin: 0;
+}
+.navigation {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+
+.titlePage{
+    position: fixed;
+    font-family: poppins, sans-serif;
+    margin-left: 100px;
+    color: #A91D3A;
+    z-index: 9;
+}
+
+.bgContainer {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+.btnContainer{
+    z-index: 10;
+}
+
+.btnNav {
+    font-family: poppins, sans-serif;
+    width: 100px;
+    color: #000000;
+    font-weight: 700;
+    font-size: large;
+    border: none;
+    background-color: transparent;
+    z-index: 10;
+    transition: 0.2s ease-in-out;
+}
+
+.btnNav:hover {
+    transform: scale(1.1);
+}
+
+.frontImage {
+    margin-top: 95px;
+    margin-left: 100px;
+    border-radius: 40px;
+    height: 600px;
+    transition: 0.2s ease-in-out;
+}
+
+.frontImage:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.263);
+}
+
+#frontPage {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.description{
+    color: #A1DD70;
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    font-size: 40px;
+    font-family: poppins, sans-serif;
+}
+
+.descText{
+    color: white;
+    top: 100px;
+    position: absolute;
+    width: 700px;
+    font-size: 30px;
+}
+
+.orderHome {
+    position: absolute;
+    top: 240px;
+    font-family: poppins, sans-serif;
+    border: none;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.orderHome:hover {
+    transform: scale(1.05);
+    color: #A91D3A;
+    box-shadow: 2px 0px 10px rgba(255, 255, 255, 0.263);
+}
+
+#ABOUT {
+    position: relative;
+    height: 100vh;
+    background-image: url("img/bbq.jpg");
+    background-color: white;
+}
+
+.description2{
+    background-color: #000000;
+    height: 100vh;
+    z-index: 9;
+    opacity: 0.5;
+}
+
+#orderPage{
+    background-color: white;
+    position: relative;
+    height: 100vh;
+}
+
+.titleAbout{
+    position: absolute;
+    color: white;
+    font-family: poppins, sans-serif;
+    top: 10px;
+    left: 100px;
+    font-size: 50px;
+    z-index: 13;
+}
+
+.titleMenu {
+    position: absolute;
+    color: black;
+    font-family: poppins, sans-serif;
+    left: 100px;
+    font-size: 50px;
+    z-index: 13;
+}
+
+.containerMenu {
+    position: absolute;
+    top: 160px;
+    left: 200px;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+}
+
+
+.product{
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 2px 0px 9px rgba(3, 3, 3, 0.263);
+    transition: 0.2s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.03);
+}
+
+.containerMenu2 {
+    position: absolute;
+    top: 560px;
+    left: 200px;
+    width: 100vh;
+    height: 100vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+ }
+
+ #addToCart{
+    position: absolute;
+    display: none;
+    width: 650px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 0px 10px #c0bfbf6a;
+    animation: animShift ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 14;
+}
+
+@keyframes animShift {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animShiftOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#close{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    z-index: 10;
+    border-radius: 100%;
+    background-color: #949494;
+}
+
+.shape1{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    z-index: 9;
+    transform: rotate(45deg);
+}
+
+.shape2{
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    z-index: 9;
+    transform: rotate(130deg);
+}
+
+#container2 {
+    margin-top: 25px;
+    margin-left: 25px;
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+.add{
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#productTitle {
+    position: absolute;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    top: -20px;
+    left: 340px;
+}
